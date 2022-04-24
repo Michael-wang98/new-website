@@ -128,20 +128,26 @@ export default function XKCDComicWidget() {
             >Last
           </button>
         </div>
-        <div>
+        <div className={XKCD['search']}>
           <form onSubmit={() => {fetchComic(searchNum)}}>
             <label>
               Search Comic by Number
-              <input 
-                type="number" 
-                onChange={(e) => {setSearchNum(e.target.value)}}
-                placeholder="Comics number"
-                value={searchNum}
-                required
-              >
-              </input>
             </label>
-            <input type="submit" value="Submit" />
+            <input
+              disabled={loading}
+              type="number"
+              min="1"
+              max={latestNum}
+              onChange={(e) => {setSearchNum(e.target.value)}}
+              placeholder="Comic #"
+              required>
+            </input>
+            <button
+              disabled={loading}
+              className={XKCD['button']}
+              type="submit"
+              value="Submit"
+              >Find</button>
           </form>
         </div>
       </div>
