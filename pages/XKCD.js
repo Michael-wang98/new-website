@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import XKCD from '../styles/modules/XKCD.module.css';
+import XKCDButtons from '../components/XKCD-buttons';
 
 export default function XKCDComicWidget() {
   const [comic, setComic] = useState(null);
@@ -39,9 +40,9 @@ export default function XKCDComicWidget() {
     });
   };
 
-  const randomComic = () => {
-    fetchComic(Math.floor((Math.random() * (latestNum-1)) + 1))
-  };
+  // const randomComic = () => {
+  //   fetchComic(Math.floor((Math.random() * (latestNum-1)) + 1))
+  // };
 
   if (loading) {
     return(
@@ -61,73 +62,22 @@ export default function XKCDComicWidget() {
     <div className={XKCD['background']}>
       <div className={XKCD['main']}>
         <h1 className={XKCD['title']}>{comic.title}</h1>
-        <div className={XKCD['buttons']}>
-          <button
-            className={XKCD['button']}
-            disabled={comic.num <= 1 || loading}
-            onClick={() => {fetchComic(1)}}>
-              First
-          </button>
-          <button
-            className={XKCD['button']} 
-            disabled={comic.num <= 1 || loading}
-            onClick={() => {fetchComic(comic.num - 1)}}
-            >Previous
-          </button>
-          <button 
-            className={XKCD['button']} 
-            disabled={loading}
-            onClick={() => {randomComic()}}
-            >Random
-          </button>
-          <button 
-            className={XKCD['button']} 
-            disabled={comic.num >= latestNum || loading}
-            onClick={() => {fetchComic(comic.num + 1)}}
-            >Next
-          </button>
-          <button
-            className={XKCD['button']} 
-            disabled={comic.num === latestNum || loading} 
-            onClick={() => {fetchLatestComic()}}
-            >Last
-          </button>
-        </div>
+        <XKCDButtons
+          fetchComic={fetchComic}
+          number={comic.num}
+          loading={loading}
+          latestNum={latestNum}>
+        </XKCDButtons>
         <div className={XKCD['comic']}>
           <img src={comic.img} alt={comic.title} title={comic.alt}/>
           <p>XKCD #{comic.num} Published: {comic.month}, {comic.day}, {comic.year}</p>
         </div>
-        <div className={XKCD['buttons']}>
-          <button 
-            className={XKCD['button']} 
-            disabled={comic.num <= 1 || loading}
-            onClick={() => {fetchComic(1)}}
-            >First</button>
-          <button
-            className={XKCD['button']} 
-            disabled={comic.num <= 1 || loading}
-            onClick={() => {fetchComic(comic.num - 1)}}
-            >Previous
-          </button>
-          <button 
-            className={XKCD['button']}
-            disabled={loading}
-            onClick={() => {randomComic()}}
-            >Random
-          </button>
-          <button
-            className={XKCD['button']} 
-            disabled={comic.num >= latestNum || loading}
-            onClick={() => {fetchComic(comic.num + 1)}}
-            >Next
-          </button>
-          <button
-            className={XKCD['button']} 
-            disabled={comic.num === latestNum || loading} 
-            onClick={() => {fetchLatestComic()}}
-            >Last
-          </button>
-        </div>
+        <XKCDButtons
+          fetchComic={fetchComic}
+          number={comic.num}
+          loading={loading}
+          latestNum={latestNum}>
+        </XKCDButtons>
         <div className={XKCD['search']}>
           <form onSubmit={() => {fetchComic(searchNum)}}>
             <label>
