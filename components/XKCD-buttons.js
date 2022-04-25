@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import XKCD from '../styles/modules/XKCD.module.css';
 
 export default function XKCDButtons ({fetchComic, number, latestNum}) {

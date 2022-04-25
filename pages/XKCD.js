@@ -9,7 +9,8 @@ export default function XKCDComicWidget() {
   const [latestNum, setLatestNum] = useState(null);
   const [searchNum, setSearchNum] = useState();
 
-  const cors = 'https://murmuring-anchorage-90283.herokuapp.com';
+  // Use a cors-anywhere instance running from a heroku dyno to attach CORS headers to API requests
+  const cors = 'https://murmuring-anchorage-90283.herokuapp.com'; 
   const URL = 'https://xkcd.com';
   const suffix = 'info.0.json';
   
@@ -30,7 +31,6 @@ export default function XKCDComicWidget() {
 
   const fetchLatestComic = () => {
     axios.get(`${cors}/${URL}/${suffix}`).then(res => {
-      console.log(res.data);
       setComic(res.data);
       setLatestNum(res.data.num);
     }).catch(err => {
@@ -39,10 +39,6 @@ export default function XKCDComicWidget() {
       setLoading(false);
     });
   };
-
-  // const randomComic = () => {
-  //   fetchComic(Math.floor((Math.random() * (latestNum-1)) + 1))
-  // };
 
   if (loading) {
     return(
