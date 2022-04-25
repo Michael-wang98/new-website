@@ -61,13 +61,13 @@ export default function XKCDComicWidget() {
     <div className={XKCD['background']}>
       <div className={XKCD['main']}>
         <h1 className={XKCD['title']}>{comic.title}</h1>
-        <div className={XKCD['buttons']} >
+        <div className={XKCD['buttons']}>
           <button
             className={XKCD['button']}
             disabled={comic.num <= 1 || loading}
             onClick={() => {fetchComic(1)}}>
               First
-            </button>
+          </button>
           <button
             className={XKCD['button']} 
             disabled={comic.num <= 1 || loading}
@@ -133,21 +133,24 @@ export default function XKCDComicWidget() {
             <label>
               Search Comic by Number
             </label>
-            <input
-              disabled={loading}
-              type="number"
-              min="1"
-              max={latestNum}
-              onChange={(e) => {setSearchNum(e.target.value)}}
-              placeholder="Comic #"
-              required>
-            </input>
-            <button
-              disabled={loading}
-              className={XKCD['button']}
-              type="submit"
-              value="Submit"
-              >Find</button>
+            <div className={XKCD['search-controls']}>
+              <input
+                disabled={loading}
+                type="number"
+                min="1"
+                max={latestNum}
+                onChange={(e) => {setSearchNum(e.target.value)}}
+                placeholder="Comic #"
+                required>
+              </input>
+              <button
+                disabled={loading}
+                className={XKCD['button']}
+                type="submit"
+                value="Submit"
+                >Find
+              </button>
+            </div>
           </form>
         </div>
       </div>
