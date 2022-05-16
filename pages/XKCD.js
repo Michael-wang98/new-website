@@ -55,16 +55,16 @@ export default function XKCDComicWidget() {
   }
 
   return(
-    <div className={XKCD['background']}>
-      <div className={XKCD['main']}>
-        <h1 className={XKCD['title']}>{comic.title}</h1>
+    <div className={XKCD.background}>
+      <div className={XKCD.main}>
+        <h1 className={XKCD.title}>{comic.title}</h1>
         <XKCDButtons
           fetchComic={fetchComic}
           number={comic.num}
           loading={loading}
           latestNum={latestNum}>
         </XKCDButtons>
-        <div className={XKCD['comic']}>
+        <div className={XKCD.comic}>
           <img src={comic.img} alt={comic.title} title={comic.alt}/>
           <p>XKCD #{comic.num} Published: {comic.month}, {comic.day}, {comic.year}</p>
         </div>
@@ -74,7 +74,7 @@ export default function XKCDComicWidget() {
           loading={loading}
           latestNum={latestNum}>
         </XKCDButtons>
-        <div className={XKCD['search']}>
+        <div className={XKCD.search}>
           <form onSubmit={() => {fetchComic(searchNum)}}>
             <label>
               Search Comic by Number
@@ -91,7 +91,7 @@ export default function XKCDComicWidget() {
               </input>
               <button
                 disabled={loading}
-                className={XKCD['button']}
+                className={XKCD.button}
                 type="submit"
                 value="Submit"
                 >Find
