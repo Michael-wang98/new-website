@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Head from 'next/head';
 import axios from 'axios';
 import XKCD from '../styles/modules/XKCD.module.css';
 import XKCDButtons from '../components/XKCD-buttons';
@@ -56,6 +57,13 @@ export default function XKCDComicWidget() {
 
   return(
     <div className={XKCD.background}>
+      <Head>
+        <title>XKCD Mockup</title>
+        <link rel="icon" href="/XKCD.ico"/>
+        <meta name="description" content="A mockup of the XKCD website using the XKCD API"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <meta name="keywords" content="axios, React, CORS, XKCD API, CSS"></meta>
+      </Head>
       <div className={XKCD.main}>
         <h1 className={XKCD.title}>{comic.title}</h1>
         <XKCDButtons

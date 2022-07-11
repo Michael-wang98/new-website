@@ -1,12 +1,19 @@
 import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import Layout from '../components/layout';
+import Navbar from '../components/navbar';
+import {Container} from 'react-bootstrap';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout home>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <Navbar/>
+      <Layout>
+        <Container fluid>
+          <Component {...pageProps} />
+        </Container>
+      </Layout>
+    </>
   );
 }
 
