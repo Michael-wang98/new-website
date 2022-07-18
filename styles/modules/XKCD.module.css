@@ -1,8 +1,8 @@
 .background {
   background-color:#96A8C8;
   position: relative;
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 90vh;
+  min-width: 90vw;
 }
 
 .button {

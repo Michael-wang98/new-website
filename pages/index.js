@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useState, React, Icon } from 'react';
-import Layout from '../components/layout';
 import { Button, Alert, Badge, Breadcrumb, Card, Dropdown } from 'react-bootstrap';
 
 export default function Home() {
@@ -54,20 +53,6 @@ export default function Home() {
           </Card.Body>
         </Card>
 
-        <Card body>This is some text within a card body.</Card>
-
-        <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Dropdown Button
-          </Dropdown.Toggle>
-
-          <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
-
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card} target="_blank" rel="noopener noreferrer" >
             <h2>Documentation &rarr;</h2>
@@ -100,15 +85,6 @@ export default function Home() {
           </a>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-      </footer>
     </div>
   )
 }

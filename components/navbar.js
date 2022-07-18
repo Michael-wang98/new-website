@@ -1,32 +1,26 @@
-import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
-import { FaGithub } from 'react-icons/fa';
+import { Navbar, Container, Nav } from 'react-bootstrap';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import styles from '../styles/modules/navbar.module.css';
 
 export default function Home() {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
             <Container fluid>
-                <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Brand href="/">Michael</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                    <Nav.Link href="#features">Features</Nav.Link>
-                    <Nav.Link href="#pricing">Pricing</Nav.Link>
-                    <Nav.Link href="https://github.com/Michael-wang98" target="_blank" rel="noopener noreferrer">
-                        <FaGithub/>
-                    </Nav.Link>
-                    <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                    </NavDropdown>
+                        <Nav.Link href="https://github.com/Michael-wang98" target="_blank" rel="noopener noreferrer">
+                            <FaGithub/>
+                        </Nav.Link>
+                        <Nav.Link href="https://linkedin.com/in/michael-wang-66327b16a" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin/>
+                        </Nav.Link>
                     </Nav>
                     <Nav>
-                    <Nav.Link href="#thingy">More deets</Nav.Link>
-                    <Nav.Link eventKey={2} href="#memes">
-                        Dank memes
-                    </Nav.Link>
+                        <Nav.Link className={styles.navButton} href="#features">About</Nav.Link>
+                        <Nav.Link href="#projects">Projects</Nav.Link>
+                        <Nav.Link href="#resume">Resume</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

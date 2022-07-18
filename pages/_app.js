@@ -1,19 +1,18 @@
 import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import Layout from '../components/layout';
-import Navbar from '../components/navbar';
 import {Container} from 'react-bootstrap';
+import SSRProvider from 'react-bootstrap/SSRProvider'; // Needed for React-Bootstrap
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <Navbar/>
+    <SSRProvider>
       <Layout>
-        <Container fluid>
+        <Container fluid className='no-padding'>
           <Component {...pageProps} />
         </Container>
       </Layout>
-    </>
+    </SSRProvider>
   );
 }
 

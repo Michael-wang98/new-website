@@ -1,14 +1,21 @@
 .container {
-  padding: 0 1rem;
-  margin: 3rem auto 6rem;
+  background-color:#96A8C8;
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.footer {
+  background-color:#96A8C8;
 }
 
-.backToHome {
-  margin: 3rem 0 0;
+.footer .row {
+  justify-content: center;
+  margin: 1rem 1rem 0rem;
+}
+
+.link {
+  color: black;
+}
+
+.link:hover {
+  color: green;
+  transition: 0.5s;
 }
