@@ -43,8 +43,8 @@ export default function XKCDComicWidget() {
 
   if (loading) {
     return(
-      <div className={XKCD['background']}>
-        <div className={XKCD['main']}>
+      <div className={XKCD.background}>
+        <div className={XKCD.main}>
           <div className={XKCD['loading-spinner']}></div>
         </div>
       </div>
@@ -52,7 +52,13 @@ export default function XKCDComicWidget() {
   }
 
   if (!comic) {
-    return(<div>Error...</div>)
+    return(
+      <div className={XKCD.background}>
+        <div className={XKCD.main}>
+          <div>Error...</div>
+        </div>
+      </div>
+    )
   }
 
   return(

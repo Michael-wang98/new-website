@@ -3,3 +3,13 @@
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 https://new-website-phi-liart.vercel.app/ 
+
+ToDo:
+
+- Proper project cards
+
+- Add photos
+
+- Properly style navbar
+
+- Clean up the main page (random components)
