@@ -29,7 +29,7 @@ export default function Home() {
         </p>
 
         {show &&
-          <Alert variant="success" onClose={() => setShow(false)} dismissible>What's Good</Alert>
+          <Alert variant="success" onClose={() => setShow(false)} dismissible>What&apos;s Good</Alert>
         }
 
         <Button className="btn btn-secondary" href="/XKCD">Hello</Button>
