@@ -22,9 +22,10 @@ export default function Home() {
                     </Nav>
                     {route.pathname === '/' && // Only show links to sections of homepage on homepage
                         <Nav>
-                            <Nav.Link className={styles.navButton} href="#features">About</Nav.Link>
+                            <Nav.Link className={styles.navButton} href="#about">About</Nav.Link>
                             <Nav.Link className={styles.navButton} href="#projects">Projects</Nav.Link>
-                            <Nav.Link className={styles.navButton} href="#resume">Resume</Nav.Link>
+                            <Nav.Link className={styles.navButton} href="/documents/Michael Wang Resume.pdf" 
+                                target="_blank" rel="noopener noreferrer">Resume</Nav.Link>
                         </Nav>
                     }
                 </Navbar.Collapse>

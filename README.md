@@ -10,6 +10,6 @@ ToDo:
 
 - Add photos
 
-- Properly style navbar
+- Add "About Me" section
 
 - Clean up the main page (random components)

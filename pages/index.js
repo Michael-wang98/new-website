@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { useState, React, Icon } from 'react';
-import { Button, Alert, Badge, Breadcrumb, Card, Dropdown } from 'react-bootstrap';
+import { useState, React } from 'react';
+import { Button, Alert, Badge, Card } from 'react-bootstrap';
 
 export default function Home() {
   const [show, setShow] = useState(true);
@@ -29,7 +29,7 @@ export default function Home() {
         </p>
 
         {show &&
-          <Alert variant='success' onClose={() => setShow(false)} dismissible>What's Good</Alert>
+          <Alert variant="success" onClose={() => setShow(false)} dismissible>What's Good</Alert>
         }
 
         <Button className="btn btn-secondary" href="/XKCD">Hello</Button>
@@ -40,7 +40,7 @@ export default function Home() {
             <Card.Title>Card Title</Card.Title>
             <Card.Text>
               Some quick example text to build on the card title and make up the bulk of
-              the card's content.
+              the card content.
             </Card.Text>
             <Card.Link href="/XKCD">Card Link</Card.Link>
           </Card.Body>
