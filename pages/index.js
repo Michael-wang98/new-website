@@ -18,13 +18,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Breadcrumb>
-          <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-          <Breadcrumb.Item href="/XKCD">
-            Library
-          </Breadcrumb.Item>
-          <Breadcrumb.Item active>Data</Breadcrumb.Item>
-        </Breadcrumb>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer">Next.js!</a>
         </h1>

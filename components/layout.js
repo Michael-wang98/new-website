@@ -1,13 +1,12 @@
 import styles from '../styles/modules/layout.module.css';
 import utilStyles from '../styles/modules/utils.module.css';
 import React from 'react';
-import { useRouter } from 'next/router';
 import Navbar from '../components/navbar';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Row, Col, NavLink } from 'react-bootstrap';
 
 export default function Layout({ children }) {
-  const route = useRouter(); // Get the router object containing the current pathname, query and asPath
+  
 
   return (
     <div className={styles.container}>

@@ -1,4 +1,38 @@
+.navBrand {
+    color:white !important;
+    background-color: #212529;
+    font-size:x-large;
+    margin: auto 1rem;
+}
+
+.navBrand:hover {
+    color: blue !important;
+    font-size:x-large;
+    transition: 0.5s;
+}
+
 .navButton {
-    color: blue;
-    background-color: aquamarine;
+    color:white !important;
+    background-color: #212529;
+    font-size:x-large;
+    margin: auto 1rem;
+}
+
+.navButton:hover {
+    color: blue !important;
+    font-size:x-large;
+    transition: 0.5s;
+}
+
+.socialButton {
+    color:white !important;
+    background-color: #212529;
+    font-size:x-large;
+    margin-bottom: 6px;
+}
+
+.socialButton:hover {
+    color: blue !important;
+    font-size:x-large;
+    transition: 0.5s;
 }
