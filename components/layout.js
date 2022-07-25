@@ -16,7 +16,7 @@ export default function Layout({ children }) {
       <main>{children}</main>
       <footer className={styles.footer}>
         <Row className={styles.row}>
-          Coded in the Next.js framework using React-Bootstrap Components
+          Coded using the Next.js framework with React-Bootstrap Components
         </Row>
         <Row xs='auto' className={styles.row}>
           <Col>
