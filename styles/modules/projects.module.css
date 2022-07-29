@@ -1,0 +1,11 @@
+.navButton {
+    color:black;
+    background-color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.navButton:hover {
+    color: blue !important;
+    transition: 0.5s;
+}

@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/modules/Home.module.css'
 import { useState, React } from 'react';
-import { Button, Alert, Badge, Card } from 'react-bootstrap';
+import { Button, Alert, Badge, Card, Carousel } from 'react-bootstrap';
+import Projects from '../components/projects';
 
 export default function Home() {
   const [show, setShow] = useState(true);
@@ -11,42 +12,33 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Michael Wang</title>
-        <meta name="author" content="Michael Wang"></meta>
+        <meta name="author" content="Michael Wang"/>
         <meta name="description" content="Michael Wang's personal website created using Next.js"/>
         <link rel="icon" href="/favicon.ico"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer">Next.js!</a>
+          Hello there
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code> 
-          <Badge bg="secondary">New</Badge>
+          <code className={styles.code}>pages/index.js for i in range</code> 
         </p>
 
-        {show &&
-          <Alert variant="success" onClose={() => setShow(false)} dismissible>What&apos;s Good</Alert>
-        }
+        <Projects/>
 
-        <Button className="btn btn-secondary" href="/XKCD">Hello</Button>
+        <div id="about" className={styles.title}>
+          About
+          <p className={styles.description}>Hi, I'm Michael</p>
+        </div>
 
-        <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="/images/sky.jpg" />
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the bulk of
-              the card content.
-            </Card.Text>
-            <Card.Link href="/XKCD">Card Link</Card.Link>
-          </Card.Body>
-        </Card>
+        <div id="projects" className={styles.title}>
+          Projects
+          
 
-        <div className={styles.grid}>
+          <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card} target="_blank" rel="noopener noreferrer" >
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
@@ -76,6 +68,7 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+          </div>
         </div>
       </main>
     </div>
