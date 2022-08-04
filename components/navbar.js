@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
             <Container fluid>
-                <Navbar.Brand className={styles.navBrand} href="/">Michael</Navbar.Brand>
+                <Navbar.Brand className={styles.navBrand} href="/" data-testid='name'>Michael</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">

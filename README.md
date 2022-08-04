@@ -13,3 +13,9 @@ ToDo:
 - Add "About Me" section
 
 - Clean up the main page (random components)
+
+- Swap out the default favicon for homepage
+
+- Figure out why the button text colour swapped from black to blue after moving into projects section
+
+- Add a github actions pipeline
