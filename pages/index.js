@@ -31,7 +31,7 @@ export default function Home() {
 
         <div id="about" className={styles.title}>
           About
-          <p className={styles.description}>Hi, I'm Michael</p>
+          <p className={styles.description}>Hi, I am Michael</p>
         </div>
 
         <div id="projects" className={styles.title}>
