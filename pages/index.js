@@ -6,7 +6,7 @@ import { Button, Alert, Badge, Card, Carousel } from 'react-bootstrap';
 import Projects from '../components/projects';
 
 export default function Home() {
-  const [show, setShow] = useState(true);
+  // const [show, setShow] = useState(true);
 
   return (
     <div className={styles.container}>
@@ -37,7 +37,6 @@ export default function Home() {
         <div id="projects" className={styles.title}>
           Projects
           
-
           <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card} target="_blank" rel="noopener noreferrer" >
             <h2>Documentation &rarr;</h2>
