@@ -6,8 +6,6 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Row, Col, NavLink } from 'react-bootstrap';
 
 export default function Layout({ children }) {
-  
-
   return (
     <div className={styles.container}>
       <header className={styles.header}>
