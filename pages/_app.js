@@ -12,6 +12,11 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </Container>
       </Layout>
+      <style jsx global>{`
+        .clickable {
+          cursor: crosshair;
+        }
+      `}</style>
     </SSRProvider>
   );
 }
