@@ -27,7 +27,7 @@ export default function Home() {
           <code className={styles.code}>pages/index.js for i in range</code> 
         </p>
 
-        <Projects/>
+        
 
         <div id="about" className={styles.title}>
           About
@@ -36,7 +36,7 @@ export default function Home() {
 
         <div id="projects" className={styles.title}>
           Projects
-          
+
           <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card} target="_blank" rel="noopener noreferrer" >
             <h2>Documentation &rarr;</h2>
@@ -69,6 +69,8 @@ export default function Home() {
           </a>
           </div>
         </div>
+
+        <Projects/>
       </main>
     </div>
   )

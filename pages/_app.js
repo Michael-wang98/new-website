@@ -13,8 +13,28 @@ function MyApp({ Component, pageProps }) {
         </Container>
       </Layout>
       <style jsx global>{`
-        .clickable {
-          cursor: crosshair;
+        .projectCard {
+          height: 100%;
+          width: 90%;
+        }
+
+        .projectCard:hover,
+        .projectCard:focus,
+        .projectCard:active {
+          text-decoration: underline;
+          border-color: red;
+        }
+
+        .navButton {
+          color:black;
+          background-color: white;
+          font-size: 2rem;
+          margin: auto;
+        }
+
+        .navButton:hover {
+          color: blue !important;
+          transition: 0.5s;
         }
       `}</style>
     </SSRProvider>
