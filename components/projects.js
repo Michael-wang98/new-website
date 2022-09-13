@@ -17,9 +17,11 @@ export default function Projects() {
                                 <Card.Text>
                                     A personal portfolio website made using NextJS and React-Bootstrap, tested with Jest using a Github Actions Pipeline, hosted on Vercel
                                 </Card.Text>
+                            </Card.Body>
+                            <Card.Footer className="cardButtons">
                                 <Card.Link target="_blank" rel="noopener noreferrer" className='navButton' href="https://michael-wang98.github.io/"><FaExternalLinkAlt/></Card.Link>
                                 <Card.Link target="_blank" rel="noopener noreferrer" className='navButton' href="https://github.com/Michael-wang98/Michael-Wang98.github.io"><FaGithub/></Card.Link>
-                            </Card.Body>
+                            </Card.Footer>
                         </Col>
                     </Row>
                 </Card>
@@ -38,9 +40,11 @@ export default function Projects() {
                                 <Card.Text>
                                     A mockup of the XKCD website made in Javascript using the XKCD API
                                 </Card.Text>
+                            </Card.Body>
+                            <Card.Footer className="cardButtons">
                                 <Card.Link target="_blank" rel="noopener noreferrer" className='navButton' href="/XKCD"><FaExternalLinkAlt/></Card.Link>
                                 <Card.Link target="_blank" rel="noopener noreferrer" className='navButton' href="https://github.com/Michael-wang98/xkcd_web_widget"><FaGithub/></Card.Link>
-                            </Card.Body>
+                            </Card.Footer>
                         </Col>
                     </Row>
                 </Card>
@@ -60,8 +64,10 @@ export default function Projects() {
                                     Some quick example text to build on the card title and make up the bulk of
                                     the card content.
                                 </Card.Text>
-                                <Card.Link target="_blank" rel="noopener noreferrer" className='navButton' href="https://github.com/Jhong098/SignSense"><FaGithub/></Card.Link>
                             </Card.Body>
+                            <Card.Footer className="cardButtons">
+                                <Card.Link target="_blank" rel="noopener noreferrer" className='navButton' href="https://github.com/Jhong098/SignSense"><FaGithub/></Card.Link>
+                            </Card.Footer>
                         </Col>
                     </Row>
                 </Card>
@@ -81,8 +87,10 @@ export default function Projects() {
                                     Some quick example text to build on the card title and make up the bulk of
                                     the card content.
                                 </Card.Text>
-                                <Card.Link target="_blank" rel="noopener noreferrer" className='navButton' href="https://github.com/Michael-wang98/CLI-Twitter-Mockup"><FaGithub/></Card.Link>
                             </Card.Body>
+                            <Card.Footer className="cardButtons">
+                                <Card.Link target="_blank" rel="noopener noreferrer" className='navButton' href="https://github.com/Michael-wang98/CLI-Twitter-Mockup"><FaGithub/></Card.Link>
+                            </Card.Footer>
                         </Col>
                     </Row>
                 </Card>
@@ -102,8 +110,10 @@ export default function Projects() {
                                     Some quick example text to build on the card title and make up the bulk of
                                     the card content.
                                 </Card.Text>
-                                <Card.Link target="_blank" rel="noopener noreferrer" className='navButton' href="https://github.com/Michael-wang98/redditBot"><FaGithub/></Card.Link>
                             </Card.Body>
+                            <Card.Footer className="cardButtons">
+                                <Card.Link target="_blank" rel="noopener noreferrer" className='navButton' href="https://github.com/Michael-wang98/redditBot"><FaGithub/></Card.Link>
+                            </Card.Footer>
                         </Col>
                     </Row>
                 </Card>
@@ -122,18 +132,10 @@ export default function Projects() {
                                 <Card.Text>
                                     A personal portfolio website made using NextJS and React-Bootstrap, tested with Jest using a Github Actions Pipeline, hosted on Vercel
                                 </Card.Text>
+                            </Card.Body>
+                            <Card.Footer className="cardButtons">
                                 <Card.Link target="_blank" rel="noopener noreferrer" className='navButton' href="https://michael-wang98.github.io/"><FaExternalLinkAlt/></Card.Link>
                                 <Card.Link target="_blank" rel="noopener noreferrer" className='navButton' href="https://github.com/Michael-wang98/Michael-Wang98.github.io"><FaGithub/></Card.Link>
-                            </Card.Body>
-                            <Card.Footer>
-                            <Nav variant="tabs" defaultActiveKey="#first">
-                                <Nav.Item>
-                                    <Nav.Link target="_blank" rel="noopener noreferrer" href="https://michael-wang98.github.io/">Active</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link target="_blank" rel="noopener noreferrer" href="https://github.com/Michael-wang98/Michael-Wang98.github.io">Link</Nav.Link>
-                                </Nav.Item>
-                            </Nav>
                             </Card.Footer>
                         </Col>
                     </Row>

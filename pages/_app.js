@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }) {
         .projectCard {
           height: 100%;
           width: 90%;
+          display: flex;
         }
 
         .projectCard:hover,
@@ -35,6 +36,14 @@ function MyApp({ Component, pageProps }) {
         .navButton:hover {
           color: blue !important;
           transition: 0.5s;
+        }
+
+        .cardButtons {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          background-color: white;
+          border-top: none;
         }
       `}</style>
     </SSRProvider>
