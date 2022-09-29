@@ -26,8 +26,6 @@ export default function Home() {
           <code className={styles.code}>pages/index.js for i in range</code> 
         </p>
 
-        
-
         <div id="about" className={styles.title}>
           About
           <p className={styles.description}>Hi, I am Michael</p>

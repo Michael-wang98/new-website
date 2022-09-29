@@ -17,6 +17,8 @@ function MyApp({ Component, pageProps }) {
           height: 100%;
           width: 90%;
           display: flex;
+          justify-content: center;
+          margin: 0rem 2rem;
         }
 
         .projectCard:hover,
