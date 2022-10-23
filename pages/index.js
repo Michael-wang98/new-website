@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/modules/Home.module.css'
 import { useState, React } from 'react';
 import Projects from '../components/projects';
+import { Row, Col } from 'react-bootstrap';
 
 export default function Home() {
   // const [show, setShow] = useState(true);
@@ -18,18 +19,38 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Hello there
-        </h1>
 
-        <p className={styles.description}>
+        <Row>
+          <Col>
+            <Image
+              src="/images/profile.jpg"
+              alt="Self Portrait"
+              layout="fixed"
+              width={450}
+              height={600}
+            />
+          </Col>
+          <Col>
+            <h1 className={styles.title}>
+              Hi, I&apos;m Michael Wang, a software developer with a passion for creating intuitive user experiences with code. 
+            </h1>
+
+            <div id="about" className={styles.title}>
+              About
+              <p className={styles.description}>I&apos;m a Software Developer with a passion for swimming, classical literature and coding. I&apos;m currently working full time as a fullstack developer while tinkering with some side projects in my free time.
+              I have a passion for examining processes and proposing improvements with regards to efficiency, intuitiveness and documentation.</p>
+            </div>
+          </Col>
+        </Row>
+        
+
+        
+
+        {/* <p className={styles.description}>
           <code className={styles.code}>pages/index.js for i in range</code> 
-        </p>
+        </p> */}
 
-        <div id="about" className={styles.title}>
-          About
-          <p className={styles.description}>Hi, I am Michael</p>
-        </div>
+        
 
         <div id="projects" className={styles.title}>
           Projects
