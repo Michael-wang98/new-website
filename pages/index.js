@@ -20,8 +20,8 @@ export default function Home() {
 
       <main className={styles.main}>
 
-        <Row>
-          <Col>
+        <Row className="justify-content-md-center">
+          <Col lg={4}>
             <Image
               src="/images/profile.jpg"
               alt="Self Portrait"
@@ -30,7 +30,7 @@ export default function Home() {
               height={600}
             />
           </Col>
-          <Col>
+          <Col lg={4}>
             <h1 className={styles.title}>
               Hi, I&apos;m Michael Wang, a software developer with a passion for creating intuitive user experiences with code. 
             </h1>
@@ -43,14 +43,9 @@ export default function Home() {
           </Col>
         </Row>
         
-
-        
-
         {/* <p className={styles.description}>
           <code className={styles.code}>pages/index.js for i in range</code> 
-        </p> */}
-
-        
+        </p> */}   
 
         <div id="projects" className={styles.title}>
           Projects
