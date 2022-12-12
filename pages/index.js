@@ -36,7 +36,7 @@ export default function Home() {
             </h1>
 
             <div id="about" className={styles.title}>
-              About
+              
               <p className={styles.description}>I&apos;m a Software Developer with a passion for swimming, classical literature and coding. I&apos;m currently working full time as a fullstack developer while tinkering with some side projects in my free time.
               I have a passion for examining processes and proposing improvements with regards to efficiency, intuitiveness and documentation.</p>
             </div>

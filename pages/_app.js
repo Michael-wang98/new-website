@@ -24,8 +24,13 @@ function MyApp({ Component, pageProps }) {
         .projectCard:hover,
         .projectCard:focus,
         .projectCard:active {
-          text-decoration: underline;
-          border-color: red;
+          border-color: blue;
+        }
+
+        .projectLink {
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 1.3rem;
         }
 
         .navButton {

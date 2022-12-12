@@ -3,7 +3,7 @@ import { Card, Row, Col } from 'react-bootstrap';
 
 export default function ProjectCard ({image, title, subtitle, description, external, github}) {
     return (
-        <Col lg={4} md={6} sm={12}>
+        <Col md={6} sm={12}>
             <Card className="projectCard">
                 <Row>
                     <Col>
@@ -12,15 +12,15 @@ export default function ProjectCard ({image, title, subtitle, description, exter
                     <Col>
                         <Card.Body>
                             <Card.Title>{title}</Card.Title>
-                            <Card.Subtitle className="mb-2 text-warning">{subtitle}</Card.Subtitle>
+                            <Card.Subtitle className="mb-2 text-primary">{subtitle}</Card.Subtitle>
                             <Card.Text>{description}</Card.Text>
                         </Card.Body>
-                        <Card.Footer className="cardButtons">
+                        <Card.Footer className="cardButtons d-flex">
                             {external &&
-                                <Card.Link target="_blank" rel="noopener noreferrer" className='navButton' href={external}><FaExternalLinkAlt/></Card.Link>
+                                <Card.Link target="_blank" rel="noopener noreferrer" className='projectLink' href={external}>CHECK IT OUT</Card.Link>
                             }
                             {github &&
-                                <Card.Link target="_blank" rel="noopener noreferrer" className='navButton' href={github}><FaGithub/></Card.Link>
+                                <Card.Link target="_blank" rel="noopener noreferrer" className='navButton d-flex' href={github}><FaGithub/></Card.Link>
                             }
                         </Card.Footer>
                     </Col>
