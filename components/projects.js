@@ -3,7 +3,7 @@ import ProjectCard from './project-card';
 
 export default function Projects() {
     return (
-        <Row xs={1} md={2} className="mt-2 g-4">
+        <Row className="mt-2 g-4">
             <ProjectCard
                 image='/images/website.jpg'
                 title='Portfolio Website V2.0'

@@ -3,7 +3,7 @@ import { Card, Row, Col } from 'react-bootstrap';
 
 export default function ProjectCard ({image, title, subtitle, description, external, github}) {
     return (
-        <Col md={6} sm={12}>
+        <Col xl={6} lg={8} md={10} sm={12}>
             <Card className="projectCard">
                 <Row>
                     <Col>
@@ -13,7 +13,7 @@ export default function ProjectCard ({image, title, subtitle, description, exter
                         <Card.Body>
                             <Card.Title>{title}</Card.Title>
                             <Card.Subtitle className="mb-2 text-primary">{subtitle}</Card.Subtitle>
-                            <Card.Text>{description}</Card.Text>
+                            <Card.Text className="pb-5">{description}</Card.Text>
                         </Card.Body>
                         <Card.Footer className="cardButtons d-flex">
                             {external &&
