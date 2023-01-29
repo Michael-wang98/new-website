@@ -7,12 +7,6 @@ Current website URL: https://new-website-phi-liart.vercel.app/
 
 ToDo:
 
-- Add photos
-
-- Add "About Me" section
-
 - Clean up the main page (random components)
-
-- Swap out the default favicon for homepage
 
 - Add a github actions pipeline
