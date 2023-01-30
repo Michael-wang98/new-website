@@ -1,12 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/modules/Home.module.css'
-import { useState, React } from 'react';
+import { React } from 'react';
 import Projects from '../components/projects';
 import { Row, Col } from 'react-bootstrap';
 
 export default function Home() {
-  // const [show, setShow] = useState(true);
 
   return (
     <div className={styles.container}>
@@ -27,7 +26,7 @@ export default function Home() {
 
       <main className={styles.main} id="about">
         <Row className="justify-content-md-center">
-          <Col lg={4}>
+          <Col xl={4} lg={10}>
             <Image
               src="/images/profile.jpg"
               alt="Self Portrait"
@@ -36,7 +35,7 @@ export default function Home() {
               height={600}
             />
           </Col>
-          <Col lg={4}>
+          <Col xl={{ span: 4, offset: 1 }} lg={10}>
             <div>
               <h1 className={styles.description}>
                 Hi, I&apos;m Michael Wang, a software developer with a passion for creating intuitive user experiences with code. 
@@ -46,10 +45,6 @@ export default function Home() {
             </div>
           </Col>
         </Row>
-        
-        {/* <p className={styles.description}>
-          <code className={styles.code}>pages/index.js for i in range</code> 
-        </p> */}   
 
         <div id="projects" className={styles.title}>
           Projects
