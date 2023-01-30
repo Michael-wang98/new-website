@@ -11,7 +11,7 @@ export default function XKCDComicWidget() {
   const [searchNum, setSearchNum] = useState();
 
   // Use a cors-anywhere instance running from a heroku dyno to attach CORS headers to API requests
-  const cors = 'https://murmuring-anchorage-90283.herokuapp.com'; 
+  const cors = 'https://cors-anywhere.herokuapp.com'; 
   const URL = 'https://xkcd.com';
   const suffix = 'info.0.json';
   
