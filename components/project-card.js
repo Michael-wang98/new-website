@@ -1,4 +1,4 @@
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import { Card, Row, Col } from 'react-bootstrap';
 
 export default function ProjectCard ({image, title, subtitle, description, external, github}) {
