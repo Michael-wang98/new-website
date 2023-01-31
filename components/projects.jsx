@@ -1,4 +1,4 @@
-import { Row, Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import ProjectCard from './project-card';
 
 export default function Projects() {

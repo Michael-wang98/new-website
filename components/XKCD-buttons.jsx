@@ -1,6 +1,6 @@
 import XKCD from '../styles/modules/XKCD.module.css';
 
-export default function XKCDButtons ({fetchComic, number, latestNum}) {
+export default function XKCDButtons ({fetchComic, number, latestNum, fetchLatestComic}) {
     return (
         <div className={XKCD.buttons}>
           <button

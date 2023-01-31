@@ -1,7 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/modules/Home.module.css'
-import { React } from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/modules/Home.module.css';
 import Projects from '../components/projects';
 import { Row, Col } from 'react-bootstrap';
 

@@ -76,7 +76,8 @@ export default function XKCDComicWidget() {
           fetchComic={fetchComic}
           number={comic.num}
           loading={loading}
-          latestNum={latestNum}>
+          latestNum={latestNum}
+          fetchLatestComic={fetchLatestComic}>
         </XKCDButtons>
         <div className={XKCD.comic}>
           <img src={comic.img} alt={comic.title} title={comic.alt}/>
@@ -86,7 +87,8 @@ export default function XKCDComicWidget() {
           fetchComic={fetchComic}
           number={comic.num}
           loading={loading}
-          latestNum={latestNum}>
+          latestNum={latestNum}
+          fetchLatestComic={fetchLatestComic}>
         </XKCDButtons>
         <div className={XKCD.search}>
           <form onSubmit={() => {fetchComic(searchNum)}}>

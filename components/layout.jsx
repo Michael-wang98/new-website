@@ -1,7 +1,5 @@
 import styles from '../styles/modules/layout.module.css';
-import utilStyles from '../styles/modules/utils.module.css';
-import React from 'react';
-import Navbar from '../components/navbar';
+import Navbar from './navbar';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Row, Col, NavLink } from 'react-bootstrap';
 
