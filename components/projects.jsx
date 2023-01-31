@@ -9,8 +9,8 @@ export default function Projects() {
                 title='Portfolio Website V2.0'
                 subtitle='NextJS, ReactJS, React-Bootstrap'
                 description='A personal portfolio website made using NextJS and React-Bootstrap, tested with Jest using a Github Actions Pipeline, hosted on Vercel'
-                external='https://michael-wang98.github.io/'
-                github='https://github.com/Michael-wang98/Michael-Wang98.github.io'/>
+                external='https://www.michael-wang.ca/'
+                github='https://github.com/Michael-wang98/new-website'/>
             
             <ProjectCard
                 image='/images/XKCD.jpg'
