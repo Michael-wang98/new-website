@@ -22,6 +22,12 @@ module.exports = {
         "react/react-in-jsx-scope": "off",
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "react/prop-types": "off",
+        "react/no-unknown-property": [2, {ignore: ["jsx", "global"]}],
         "no-extra-semi": "off"
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 }
