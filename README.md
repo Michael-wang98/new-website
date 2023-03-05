@@ -1,14 +1,20 @@
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Portfolio Website 2.0
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+A personal portfolio website to house personal projects, demonstrate programming skill .
 
+- Language: JavaScript
+- Framework: NextJS
+- Host: Vercel
+- Additional Modules:
+    - React-Bootstrap (CSS)
+    - ESLint (Linting)
+    - Jest (Unit testing)
+    - React Testing Library (Unit testing)
 
-Current website URL: https://michael-wang.ca
-Alternate URL: https://new-website-phi-liart.vercel.app/ 
+## Usage
 
-
-ToDo:
-
-- Clean up the main page (random components)
-
-- Add a github actions pipeline
+- `npm run dev`: start the website locally in development mode
+- `npm run build`: compile a production build of the website
+- `npm run start`: start the website locally in production mode
+- `npm run lint`: lint the code
+- `npm run test`: run the Jest unit tests
