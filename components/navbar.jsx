@@ -24,7 +24,7 @@ export default function Home() {
                         <Nav>
                             <Nav.Link className={styles.navButton} href="#about">About</Nav.Link>
                             <Nav.Link className={styles.navButton} href="#projects">Projects</Nav.Link>
-                            <Nav.Link className={styles.navButton} href="/documents/Michael Wang Resume.pdf" 
+                            <Nav.Link className={styles.navButton} href="/documents/Michael_Wang_Resume.pdf" 
                                 target="_blank" rel="noopener noreferrer">Resume</Nav.Link>
                         </Nav>
                     }
