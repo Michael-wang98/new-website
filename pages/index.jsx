@@ -29,7 +29,6 @@ export default function Home() {
             <Image
               src="/images/profile.jpg"
               alt="Self Portrait"
-              layout="fixed"
               width={450}
               height={600}
             />
@@ -50,7 +49,6 @@ export default function Home() {
         </div>
 
         <Projects/>
-        
       </main>
     </div>
   )
