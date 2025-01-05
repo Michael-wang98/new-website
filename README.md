@@ -24,6 +24,8 @@ A personal portfolio website to serve as a self-introduction, organize personal 
 
 ## CHANGELOG
 
+- 4 January 2025: Removed Resume
+- 29 November 2024: Updated NodeJS from v16 to v22
 - 4 March 2023: Refactor README.md
 - 3 March 2023: audited package.lock, implemented [codeql pipeline](.github\workflows\codeql.yml)
 - 30 January 2023: Add ESLint, refactor React components from .js to .jsx, delete unused files
